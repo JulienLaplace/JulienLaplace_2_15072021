@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>test</title>
+    <title>Reservia</title>
     <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <link href="hover/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="reservia.css" />
@@ -18,8 +18,8 @@
             <img class="logo" src="img/Reservia@3x.png" alt="logo" />
             <nav class="presentation">
                 <a class="lien" href="#hebergement" id="trait">Hébergements</a>
-                <a class="lien" href="#activites" id="autre">Activités</a>
-                <a href="#inscrire" id="autre" style="font-weight: bold; color: #0065FC;">S'inscrire</a>
+                <a class="lien" href="#activites" id="act">Activités</a>
+                <a href="#inscrire" id="ins" style="font-weight: bold; color: #0065FC;">S'inscrire</a>
             </nav>
         </div>
     </header>
@@ -39,11 +39,11 @@
                 </form>
             </div>
         </div>
-        <div><br>
+        <div>
             <div id="filterContainer">
                 <h3>Filtres</h3>
                 <div id="filtreContainer" class="hover">
-                    <div class="filtretexte space-between">
+                    <div class="filtretexte">
 
                         <span class="filtre">
                             <i class="fas fa-money-bill-wave hvr-icon"></i>
@@ -76,11 +76,10 @@
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
-            </div><br>
+            </div>
         </div>
         <div class="flex">
-            <div class="round-icon-info flex marg-icone border-radius-35"><i class="fas fa-info"
-                    style="color: #0065FC;"></i>
+            <div class="info"><i class="fas fa-info" style="color: #0065FC;"></i>
             </div>
             Plus de 500 logements sont disponibles dans cette ville
         </div>
@@ -88,15 +87,12 @@
 
     <!-- SECTION HEBERGEMENT -->
 
-    <main id="hebergement" class="flex space-between">
-        <div id="container-hebergement">
+    <main id="hebergement">
+        <div class="pad-heb">
             <h2>Hébergements à Marseille</h2>
-            <div class="flex wrap flex-start">
+            <div class="container-heb">
                 <div>
-
-
-                    <div class="carte-heb border-radius-15 box-shadow">
-
+                    <div class="carte-heb">
                         <img src="img/image1.jpg" alt="cannebière">
                         <h3 class="pad-left-10 pad-top-10">Auberge la Cannebière</h3>
                         <p class="pad-left-10 pad-top-10">
@@ -117,7 +113,7 @@
                 </div>
                 <div>
 
-                    <div class="carte-heb border-radius-15 box-shadow">
+                    <div class="carte-heb">
 
                         <img src="img/image2.jpg" alt="port">
                         <h3 class="pad-left-10 pad-top-10">Hôtel du port</h3>
@@ -138,7 +134,7 @@
                 <div>
 
 
-                    <div class="carte-heb border-radius-15 box-shadow">
+                    <div class="carte-heb">
 
                         <img src="img/image3.jpg" alt="les mouettes">
                         <h3 class="pad-left-10 pad-top-10">Hôtel Les mouettes</h3>
@@ -162,7 +158,7 @@
                 </div>
                 <div>
 
-                    <div class="carte-heb border-radius-15 box-shadow">
+                    <div class="carte-heb">
 
                         <img src="img/image4.jpg" alt="la mer">
                         <h3 class="pad-left-10 pad-top-10">Hôtel de la mer</h3>
@@ -184,7 +180,7 @@
                 </div>
                 <div>
 
-                    <div class="carte-heb border-radius-15 box-shadow">
+                    <div class="carte-heb">
 
                         <img src="img/image5.jpg" alt="le panier">
                         <h3 class="pad-left-10 pad-top-10">Auberge Le panier</h3>
@@ -206,7 +202,7 @@
                 </div>
                 <div>
 
-                    <div class="carte-heb border-radius-15 box-shadow">
+                    <div class="carte-heb">
 
                         <img src="img/image6.jpg" alt="chez amina">
                         <h3 class="pad-left-10 pad-top-10">Hôtel chez Amina</h3>
@@ -234,27 +230,27 @@
 
         <div id="populaire">
             <h2 class="">Les plus polulaires <i class="fas fa-chart-line pad-left-124"></i></h2>
-            <div class="carte-pop border-radius-15 box-shadow">
+            <div class="carte-pop">
                 <img src="img/image7_medium.jpg" alt="le soleil du matin">
                 <div>
-                    <div class="flex column space-between">
-                        <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
-                        <p class="pad-left-10 pad-top-10">
-                            Nuit à partir de 128<span style="font-weight: bold;">€</span>
-                        </p>
-                        <p class="pad-left-10 pad-top-45">
-                            <span style="color: #0065FC;">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                        </p>
-                    </div>
+
+                    <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
+                    <p class="pad-left-10 pad-top-10">
+                        Nuit à partir de 128<span style="font-weight: bold;">€</span>
+                    </p>
+                    <p class="pad-left-10 pad-top-45">
+                        <span style="color: #0065FC;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </p>
+
                 </div>
             </div>
-            <div class="carte-pop border-radius-15 box-shadow">
+            <div class="carte-pop">
                 <img src="img/image8_medium.jpg" alt="au coeur de l'eau">
                 <div>
                     <h3 class="pad-top-10 pad-left-10">Au coeur de l'eau Chambres d'hôtes</h3>
@@ -275,7 +271,7 @@
                 </div>
 
             </div>
-            <div class="carte-pop border-radius-15 box-shadow">
+            <div class="carte-pop">
                 <img src="img/image9_medium.jpg" alt="tout bleu et blanc">
                 <div>
                     <h3 class="pad-top-10 pad-left-10">Hôtel Tout bleu et Blanc</h3>
@@ -303,22 +299,22 @@
     <aside id="activites">
         <h2>Activités à Marseille</h2>
 
-        <div id="container-activite" class="flex">
-            <div class="grow flex ">
-                <div class="max-img grow border-radius-15 overflow">
+        <div class="container-act">
+            <div class="flex">
+                <div class="max-img">
                     <div class="carte-img-max">
                         <img src="img/image10_large.jpg" alt="vieux port" class="img-taille" />
                     </div>
                     <h3 class="pad-20">Vieux port</h3>
                 </div>
-                <div class="grow flex column space-between carte-double">
-                    <div class="min-img border-radius-15 overflow">
+                <div class="carte-double">
+                    <div class="min-img">
                         <div class="carte-img-min">
                             <img src="img/image11_large.jpg" alt="fort de pomègues" class="img-taille" />
                         </div>
                         <h3 class="pad-20">Fort de Pomègues</h3>
                     </div>
-                    <div class="min-img border-radius-15 overflow">
+                    <div class="min-img">
                         <div class="carte-img-min">
                             <img src="img/image12_large.jpg" alt="iles du frioul" class="img-taille" />
                         </div>
@@ -327,21 +323,21 @@
                 </div>
             </div>
 
-            <div class="grow flex ">
-                <div class="max-img grow border-radius-15 overflow">
+            <div class="flex">
+                <div class="max-img">
                     <div class="carte-img-max">
                         <img src="img/image13_large.jpg" alt="parc national des calanques" class="img-taille" />
                     </div>
                     <h3 class="pad-20">Parc National des Calanques</h3>
                 </div>
-                <div class="grow flex column space-between carte-double">
-                    <div class="min-img border-radius-15 overflow">
+                <div class="carte-double">
+                    <div class="min-img">
                         <div class="carte-img-min">
                             <img src="img/image14_large.jpg" alt="notre dame de la garde" class="img-taille" />
                         </div>
                         <h3 class="pad-20">Notre-Dame-de-la-Garde</h3>
                     </div>
-                    <div class="min-img border-radius-15 overflow">
+                    <div class="min-img">
                         <div class="carte-img-min">
                             <img src="img/image15_large.jpg" alt="parc longchamp" class="img-taille" />
                         </div>
@@ -355,7 +351,7 @@
 
     <footer>
         <div>
-            <div id="container-footer" class="flex wrap space-between">
+            <div id="container-footer">
                 <div>
                     <h3 class="pad-bottom-10">À propos</h3>
                     <p>Fonctionnement du site</p>
