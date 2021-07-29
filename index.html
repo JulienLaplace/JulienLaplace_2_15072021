@@ -4,15 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
+
     <link href="hover/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="reservia.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
+    <!-- POLICE RALEWAY-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- LOGO ET BARRE DE NAVIGATION -->
+
     <header>
         <div class="navbar">
             <img class="logo" src="img/Reservia@3x.png" alt="logo" />
@@ -24,10 +30,14 @@
         </div>
     </header>
 
+    <!-- DESCRIPTIF -->
+
     <section id="filtre">
-        <h2><span>Trouvez votre hébergement pour des vacances de rêves</span></h2>
+        <h2 class="pad-bottom-10"><span>Trouvez votre hébergement pour des vacances de rêves</span></h2>
         <h4>En plein centre ville ou en pleine nature</h4>
     </section>
+
+    <!-- BARRE DE RECHERCHE -->
 
     <section class="recherchebar">
         <div class="topnav">
@@ -39,40 +49,35 @@
                 </form>
             </div>
         </div>
+
+        <!-- FILTRES -->
+
         <div>
             <div id="filterContainer">
                 <h3>Filtres</h3>
                 <div id="filtreContainer" class="hover">
                     <div class="filtretexte">
-
                         <span class="filtre">
                             <i class="fas fa-money-bill-wave hvr-icon"></i>
                         </span>
-
                         <p>Économique</p>
                     </div>
                     <div class="filtretexte">
-
                         <span class="filtre">
                             <i class="fas fa-child hvr-icon"></i>
                         </span>
-
                         <p>Familial</p>
                     </div>
                     <div class="filtretexte">
-
                         <span class="filtre">
                             <i class="fas fa-heart hvr-icon"></i>
                         </span>
-
                         <p>Romantique</p>
                     </div>
                     <div class="filtretexte">
-
                         <span class="filtre">
                             <i class="fas fa-dog hvr-icon"></i>
                         </span>
-
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
@@ -81,7 +86,7 @@
         <div class="flex">
             <div class="info"><i class="fas fa-info" style="color: #0065FC;"></i>
             </div>
-            Plus de 500 logements sont disponibles dans cette ville
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
@@ -93,29 +98,28 @@
             <div class="container-heb">
                 <div>
                     <div class="carte-heb">
-                        <img src="img/image1.jpg" alt="cannebière">
-                        <h3 class="pad-left-10 pad-top-10">Auberge la Cannebière</h3>
-                        <p class="pad-left-10 pad-top-10">
-                            Nuit à partir de 25<span style="font-weight: bold;">€</span>
-                        </p>
-                        <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
-                            <span style="color: #0065FC;"><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span style="color: #d6d6d6;">
-                                <i class="fas fa-star"></i>
-                            </span>
-                        </p>
+                        <picture>
+                            <img src="img/image1_medium.jpg" alt="cannebière">
+                            <h3 class="pad-left-10 pad-top-10">Auberge la Cannebière</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 25<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;"><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #d6d6d6;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </picture>
                     </div>
-
                 </div>
                 <div>
-
                     <div class="carte-heb">
-
-                        <img src="img/image2.jpg" alt="port">
+                        <img src="img/image2_medium.jpg" alt="port">
                         <h3 class="pad-left-10 pad-top-10">Hôtel du port</h3>
                         <p class="pad-left-10 pad-top-10">
                             Nuit à partir de 52<span style="font-weight: bold;">€</span>
@@ -129,14 +133,10 @@
                             </span>
                         </p>
                     </div>
-
                 </div>
                 <div>
-
-
                     <div class="carte-heb">
-
-                        <img src="img/image3.jpg" alt="les mouettes">
+                        <img src="img/image3_medium.jpg" alt="les mouettes">
                         <h3 class="pad-left-10 pad-top-10">Hôtel Les mouettes</h3>
                         <p class="pad-left-10 pad-top-10">
                             Nuit à partir de 76<span style="font-weight: bold;">€</span>
@@ -152,15 +152,11 @@
                                 <i class="fas fa-star"></i>
                             </span>
                         </p>
-
                     </div>
-
                 </div>
                 <div>
-
                     <div class="carte-heb">
-
-                        <img src="img/image4.jpg" alt="la mer">
+                        <img src="img/image4_medium.jpg" alt="la mer">
                         <h3 class="pad-left-10 pad-top-10">Hôtel de la mer</h3>
                         <p class="pad-left-10 pad-top-10">
                             Nuit à partir de 46<span style="font-weight: bold;">€</span></p>
@@ -174,15 +170,11 @@
                                 <i class="fas fa-star"></i>
                             </span>
                         </p>
-
                     </div>
-
                 </div>
                 <div>
-
                     <div class="carte-heb">
-
-                        <img src="img/image5.jpg" alt="le panier">
+                        <img src="img/image5_medium.jpg" alt="le panier">
                         <h3 class="pad-left-10 pad-top-10">Auberge Le panier</h3>
                         <p class="pad-left-10 pad-top-10">
                             Nuit à partir de 23<span style="font-weight: bold;">€</span></p>
@@ -196,15 +188,11 @@
                             <span style="color: #d6d6d6;">
                                 <i class="fas fa-star"></i>
                             </span>
-
                     </div>
-
                 </div>
                 <div>
-
                     <div class="carte-heb">
-
-                        <img src="img/image6.jpg" alt="chez amina">
+                        <img src="img/image6_medium.jpg" alt="chez amina">
                         <h3 class="pad-left-10 pad-top-10">Hôtel chez Amina</h3>
                         <p class="pad-left-10 pad-top-10">
                             Nuit à partir de 96<span style="font-weight: bold;">€</span></p>
@@ -216,24 +204,19 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </span>
-
                     </div>
-
-
                 </div>
             </div>
             <h3 class="pad-top-60">Afficher plus</h3>
         </div>
 
-
         <!-- SECTION POPULAIRE-->
 
         <div id="populaire">
-            <h2 class="">Les plus polulaires <i class="fas fa-chart-line pad-left-124"></i></h2>
+            <h2>Les plus polulaires <i class="fas fa-chart-line pad-left-124"></i></h2>
             <div class="carte-pop">
-                <img src="img/image7_medium.jpg" alt="le soleil du matin">
+                <img src="img/image7_small.jpg" alt="le soleil du matin">
                 <div>
-
                     <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
                     <p class="pad-left-10 pad-top-10">
                         Nuit à partir de 128<span style="font-weight: bold;">€</span>
@@ -247,11 +230,10 @@
                             <i class="fas fa-star"></i>
                         </span>
                     </p>
-
                 </div>
             </div>
             <div class="carte-pop">
-                <img src="img/image8_medium.jpg" alt="au coeur de l'eau">
+                <img src="img/image8_small.jpg" alt="au coeur de l'eau">
                 <div>
                     <h3 class="pad-top-10 pad-left-10">Au coeur de l'eau Chambres d'hôtes</h3>
                     <p class="pad-left-10 pad-top-10">
@@ -269,10 +251,9 @@
                         </span>
                     </p>
                 </div>
-
             </div>
             <div class="carte-pop">
-                <img src="img/image9_medium.jpg" alt="tout bleu et blanc">
+                <img src="img/image9_small.jpg" alt="tout bleu et blanc">
                 <div>
                     <h3 class="pad-top-10 pad-left-10">Hôtel Tout bleu et Blanc</h3>
                     <p class="pad-left-10 pad-top-10">
@@ -298,7 +279,6 @@
 
     <aside id="activites">
         <h2>Activités à Marseille</h2>
-
         <div class="container-act">
             <div class="flex">
                 <div class="max-img">
@@ -310,36 +290,35 @@
                 <div class="carte-double">
                     <div class="min-img">
                         <div class="carte-img-min">
-                            <img src="img/image11_large.jpg" alt="fort de pomègues" class="img-taille" />
+                            <img src="img/image11_large.jpg" alt="pomègues" class="img-taille" />
                         </div>
                         <h3 class="pad-20">Fort de Pomègues</h3>
                     </div>
                     <div class="min-img">
                         <div class="carte-img-min">
-                            <img src="img/image12_large.jpg" alt="iles du frioul" class="img-taille" />
+                            <img src="img/image12_large.jpg" alt="frioul" class="img-taille" />
                         </div>
                         <h3 class="pad-20">&Icirc;les du Frioul</h3>
                     </div>
                 </div>
             </div>
-
             <div class="flex">
                 <div class="max-img">
                     <div class="carte-img-max">
-                        <img src="img/image13_large.jpg" alt="parc national des calanques" class="img-taille" />
+                        <img src="img/image13_large.jpg" alt="calanques" class="img-taille" />
                     </div>
                     <h3 class="pad-20">Parc National des Calanques</h3>
                 </div>
                 <div class="carte-double">
                     <div class="min-img">
                         <div class="carte-img-min">
-                            <img src="img/image14_large.jpg" alt="notre dame de la garde" class="img-taille" />
+                            <img src="img/image14_large.jpg" alt="la garde" class="img-taille" />
                         </div>
                         <h3 class="pad-20">Notre-Dame-de-la-Garde</h3>
                     </div>
                     <div class="min-img">
                         <div class="carte-img-min">
-                            <img src="img/image15_large.jpg" alt="parc longchamp" class="img-taille" />
+                            <img src="img/image15_large.jpg" alt="longchamp" class="img-taille" />
                         </div>
                         <h3 class="pad-20">Parc Longchamp</h3>
                     </div>
@@ -348,6 +327,8 @@
 
         </div>
     </aside>
+
+    <!-- FOOTER-->
 
     <footer>
         <div>
@@ -371,4 +352,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
+</html>
