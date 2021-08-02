@@ -139,6 +139,18 @@ footer
    /* margin-right: 50px;*/
 }
 
+/*-- DESCRIPTIF --*/
+
+#descriptif 
+{
+    background: white;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25px;
+    padding-top: 100px;
+    padding-left: 140px;
+}
+
 /*-- BARRE DE RECHERCHE --*/
 
 #recherche
@@ -159,37 +171,25 @@ footer
 
 /*-- FILTRE --*/
 
-#filtre 
-{
-    background: white;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 25px;
-    padding-top: 100px;
-    padding-left: 140px;
-}
-
-#filtreContainer
-{
-    display:flex;
-    padding-bottom: 30px;
-    
-}
-
-#filterContainer 
+#filtre-container 
 {
     padding-left: 140px;
-    display: flex;
+    display: flex;   
 }
 
-#filterContainer h3 
+#filtre-container h3 
 {
-  
     margin-right: 15px;
     margin-top: 15px;
 }
 
-.filtretexte
+#filtre-hover
+{
+    display:flex;
+    padding-bottom: 30px;
+}
+
+.filtre-texte
 {
     display: flex;
     border: 2px solid #e0e0e0;
@@ -198,7 +198,7 @@ footer
     cursor: pointer;
 }
 
-.filtretexte p 
+.filtre-texte p 
 {
     margin: 16px 24px 16px 24px !important;
     font-weight: 900;
@@ -226,7 +226,6 @@ footer
 
 .info 
 {
-    
     display: flex;
     min-height: 24px;
     min-width: 24px;
@@ -377,7 +376,6 @@ footer
     height: 280px;
     margin-bottom: 40px;
     border-radius: 15px;
-    cursor: pointer;
 }
 
 .carte-img-min 
