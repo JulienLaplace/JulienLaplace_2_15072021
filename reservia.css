@@ -351,9 +351,9 @@ footer
     height: 600px;
 }
 
-.carte-img-max 
+.carte-max-img 
 { 
-    height: 86%;
+    height: 90%;
 }
 
 .carte-double 
@@ -371,7 +371,7 @@ footer
     border-radius: 15px;
 }
 
-.carte-img-med 
+.carte-med-img
 { 
     height: 80%;
 }
@@ -386,7 +386,7 @@ footer
     border-radius: 15px;
 }
 
-.carte-img-med-2 
+.carte-med-img-2 
 { 
     height: 70%;
 }
@@ -401,9 +401,9 @@ footer
     border-radius: 15px;
 }
 
-.carte-img-min 
+.carte-min-img 
 { 
-    height: 70%;
+    height: 80%;
 }
 
 .img-taille
