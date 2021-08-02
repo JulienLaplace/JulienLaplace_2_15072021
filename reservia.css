@@ -134,11 +134,6 @@ footer
     color: black;
 }
 
- .lien 
-{
-   /* margin-right: 50px;*/
-}
-
 /*-- DESCRIPTIF --*/
 
 #descriptif 
@@ -239,6 +234,11 @@ footer
 
 /* -- SECTION HEBERGEMENT --*/
 
+#hebergement
+{
+    display: flex;
+}
+
 .background-heb
 {
     background-color: #F2F2F2;
@@ -253,16 +253,7 @@ footer
     margin-left: 40px;
 }
 
-#hebergement
-{
-    display: flex;
-    
-}
 
-.pad-heb 
-{
-    padding-right: 100px;
-}
 
 .container-heb
 {
@@ -383,20 +374,6 @@ footer
     height: 70%;
 }
 
-.carte-act img
-{
-    display: flex;
-    width:225px;
-    background-color:#ccc;
-    padding:1px;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    max-height: 125px;
-    height: 100%;
-    max-width: 225px;
-    width:100%;
-}
-
 .img-taille
 {
     height: 100%;
@@ -408,11 +385,6 @@ footer
 
 .background-footer
 {
-    z-index: 999;
-    padding-left: -40px;
-    padding-right: -40px;
-    background: #F2F2F2;
-    background-position: 100%;
     background-color: #F2F2F2;
 }
 
