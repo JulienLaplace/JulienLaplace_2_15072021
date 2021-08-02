@@ -1,486 +1,412 @@
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* -- GENERAL -- */
-
-html,body 
-{
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
-h4
-{
-    font-weight: normal;
-}
-
-button 
-{
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    width: 140px;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor:pointer;
-}
-
-input 
-{
-    width: 180px;
-    height: 45px;
-    padding-left: 20px;
-    border: none;
-    margin: auto 0;
-    outline:none;
-}
-
-input::placeholder 
-{
-    color: black;
-    opacity: 1;
-}
-
-main
-{
-    padding-bottom: 50px;
-    padding-left: 140px;
-    padding-right: 140px;
-}
-
-section
-{
-    padding-bottom: 50px;
-}
-
-footer 
-{
-    line-height: 32px;
-    padding: 50px;
-}
-
-/* -- HEADER -- */
-
-.navbar 
-{ 
-    padding-left: 140px;
-    padding-right: 140px;
-    height: 75px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: white;
-    z-index: 999;
-    position: fixed;
-}
-
-#heb
-{ 
-    
-    border-left: 20px;
-    color: #0065FC;
-    margin-bottom: 20px;
-    padding-top: 36px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#act
-{
-    margin-bottom: 20px;
-    border-left: 20px;
-    margin-bottom: 20px;
-    padding-top: 36px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-}
-
-#ins
-{
-    margin-bottom: 20px;
-    padding-top: 36px;
-
-}
-
-.logo
-{
-    min-width: 100px;
-    width: 3%;
-}
-
-.img
-{   
-    min-height: 100px;
-    height: 3%;
-    min-width: 200px;
-    width:3%;
-}
-
-.presentation 
-{
-    display: flex;
-    justify-content:flex-end ;
-    width: 100%;
-}
-
-.presentation, a 
-{
-    text-decoration: none;
-    color: black;
-}
-
- .lien 
-{
-   /* margin-right: 50px;*/
-}
-
-/*-- DESCRIPTIF --*/
-
-#descriptif 
-{
-    background: white;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 25px;
-    padding-top: 100px;
-    padding-left: 140px;
-}
-
-/*-- BARRE DE RECHERCHE --*/
-
-#recherche
-{
-    display: flex;
-    background-color: #F2F2F2;
-    margin-left: 140px;
-    width: 290px;
-    height: 50px;
-    border-radius: 15px;
-    
-}
-  
-.map
-{
-    padding:16px ;
-}
-
-/*-- FILTRE --*/
-
-#filtre-container 
-{
-    padding-left: 140px;
-    display: flex;   
-}
-
-#filtre-container h3 
-{
-    margin-right: 15px;
-    margin-top: 15px;
-}
-
-#filtre-hover
-{
-    display:flex;
-    padding-bottom: 30px;
-}
-
-.filtre-texte
-{
-    display: flex;
-    border: 2px solid #e0e0e0;
-    border-radius: 50px;
-    margin-right: 24px;
-    cursor: pointer;
-}
-
-.filtre-texte p 
-{
-    margin: 16px 24px 16px 24px !important;
-    font-weight: 900;
-}
-
-.filtre
-{   
-    background-color:#DEEBFF;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    color: #0065FC;
-    position: relative;
-    left: -2px;
-    width: 50px;
-}
-
-/* -- ICONE INFO -- */
-
-.container-inf
-{
-    padding-left: 140px;
-}
-
-.info 
-{
-    display: flex;
-    min-height: 24px;
-    min-width: 24px;
-    border: solid thin #d9d9d9;
-    border-radius: 35px;
-    margin-top: -4px;
-    margin-right: 15px;
-    padding-left: 8px;
-    padding-top: 3px;
-}
-
-/* -- SECTION HEBERGEMENT --*/
-
-.background-heb
-{
-    background-color: #F2F2F2;
-    border-radius:25px;
-    margin-right: 40px;
-    padding-top: 40px;
-}
-
-.background
-{
-    justify-content: space-between;
-    margin-left: 40px;
-}
-
-#hebergement
-{
-    display: flex;
-    
-}
-
-.pad-heb 
-{
-    padding-right: 100px;
-}
-
-.container-heb
-{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -10px;
-}
-
-.carte-heb
-{
-    width: 334px;
-    margin-top: 40px;
-    margin-right: 40px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px -5px #aaa;
-    background-color: white;
-}
-
-.carte-heb img
-{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 150px;
-    width: 100%;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 7px;
-}
-
-/*-- SECTION POPULAIRE --*/
-
-#populaire
-{
-    background-color: #F2F2F2;
-    border-radius:25px;
-    padding: 40px 40px 0px 40px;
-}
-
-.chart-line
-{
-    float:right;
-}
-
-.carte-pop
-{   
-    display: flex;
-    width: 340px;
-    height: 170px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px -5px #aaa;
-    background-color: white;
-}
-
-.carte-pop img
-{   
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    height: 170px;
-    width: 150px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 7px;
-}
-
-/*-- SECTION ACTIVITE --*/
-
-#activites
-{
-    padding-left: 140px;
-}
-
-.container-act
-{
-    display: flex;
-    margin-left: -35px;
-    padding-top: 50px; 
-    padding-bottom: 50px;
-
-}
-
-.max-img 
-{
-    box-shadow: 5px 5px 15px -5px #aaa;
-    overflow: hidden;
-    width: 430px;
-    min-height: 445px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    height: 600px;
-}
-
-.carte-img-max 
-{ 
-    height: 86%;
-}
-
-.carte-double 
-{
-    width: 320px;
-}
-  
-.min-img 
-{
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px -5px #aaa;
-    overflow: hidden;
-    height: 280px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-}
-
-.carte-img-min 
-{ 
-    height: 70%;
-}
-
-.carte-act img
-{
-    display: flex;
-    width:225px;
-    background-color:#ccc;
-    padding:1px;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    max-height: 125px;
-    height: 100%;
-    max-width: 225px;
-    width:100%;
-}
-
-.img-taille
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* -- FOOTER -- */
-
-.background-footer
-{
-    z-index: 999;
-    padding-left: -40px;
-    padding-right: -40px;
-    background: #F2F2F2;
-    background-position: 100%;
-    background-color: #F2F2F2;
-}
-
-#container-footer 
-{
-    padding-left: 140px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 77%;
-    margin-left: -40px;
-}   
-
-/*-- FLEX --*/
-
-.flex 
-{
-    display: flex;
-}
-
-/* -- MARGIN,PADDING -- */
-
-.pad-20 
-{
-    padding: 20px;
-}
-
-.pad-top-10
-{
-    padding-top: 10px;
-}
-
-.pad-top-40
-{
-    padding-top: 40px;
-}
-
-.pad-top-45
-{
-    padding-top: 45px;
-}
-
-.pad-bottom-10
-{
-    padding-bottom: 10px;
-}
-
-.pad-left-10
-{
-    padding-left: 20px;
-}
-
-.pad-left-40
-{
-    padding-left: 40px;
-}
-
-/* -- HOVER -- */
-
-.hover-menu:hover
-{
-    border-top:solid medium #0065FC;  
-}
-
-.hover :hover 
-{
-    background-color: #DEEBFF;
-    transition-duration: 0.7s;
-    border-color: white;
-    color: #0065FC;
-}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Reservia</title>
+    <link rel="stylesheet" href="reservia.css" />
+    <!-- FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
+    <!-- POLICE RALEWAY-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- LOGO ET BARRE DE NAVIGATION -->
+
+    <header>
+        <div class="navbar">
+            <img class="logo" src="img/Reservia@3x.png" alt="logo" />
+            <nav class="presentation">
+                <a class="lien hover-menu" href="#hebergement" id="heb">Hébergements</a>
+                <a class="lien hover-menu" href="#activites" id="act">Activités</a>
+                <a href="#inscrire" id="ins" style="font-weight: bold; color: #0065FC;">S'inscrire</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- DESCRIPTIF -->
+
+    <section id="descriptif">
+        <h2 class="pad-bottom-10"><span>Trouvez votre hébergement pour des vacances de rêves</span></h2>
+        <h4>En plein centre ville ou en pleine nature</h4>
+    </section>
+
+    <!-- BARRE DE RECHERCHE -->
+
+    <section>
+        <div id="recherche">
+            <h2><i class="fas fa-map-marker-alt map" style="color: black; "></i></h2>
+            <input type="text" placeholder="Marseille, France" style="font-weight: bold; font-size:medium;">
+            <button>
+                <span style="color: white; font-weight: bold; font-size:medium;">Rechercher</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- FILTRES -->
+
+    <section>
+        <div>
+            <div id="filtre-container">
+                <h3>Filtres</h3>
+                <div id="filtre-hover" class="hover">
+                    <div class="filtre-texte">
+                        <span class="filtre">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </span>
+                        <p>Économique</p>
+                    </div>
+                    <div class="filtre-texte">
+                        <span class="filtre">
+                            <i class="fas fa-child"></i>
+                        </span>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filtre-texte">
+                        <span class="filtre">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filtre-texte">
+                        <span class="filtre">
+                            <i class="fas fa-dog"></i>
+                        </span>
+                        <p>Animaux autorisés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-inf">
+            <div class="flex">
+                <div class="info"><i class="fas fa-info" style="color: #0065FC;"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION HEBERGEMENT -->
+
+    <main id="hebergement">
+        <div class="background-heb">
+            <div class="background">
+                <h2>Hébergements à Marseille</h2>
+                <div class="container-heb">
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image1_medium.jpg" media="">
+                                <img src="img/image1_medium.jpg" alt="cannebière">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Auberge la Cannebière</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 25<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;"><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image2_medium.jpg" media="">
+                                <img src="img/image2_medium.jpg" alt="port">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Hôtel du port</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 52<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;"><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image3_medium.jpg" media="">
+                                <img src="img/image3_medium.jpg" alt="les mouettes">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Hôtel Les mouettes</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 76<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image4_medium.jpg" media="">
+                                <img src="img/image4_medium.jpg" alt="la mer">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Hôtel de la mer</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 46<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;"><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image5_medium.jpg" media="">
+                                <img src="img/image5_medium.jpg" alt="le panier">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Auberge Le panier</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 23<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="carte-heb">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/image6_medium.jpg" media="">
+                                <img src="img/image6_medium.jpg" alt="chez amina">
+                            </picture>
+                            <h3 class="pad-left-10 pad-top-10">Hôtel chez Amina</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 96<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-10 pad-bottom-10 ">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="pad-top-40 pad-left-40">Afficher plus</h3>
+        </div>
+
+        <!-- SECTION POPULAIRE-->
+
+        <div id="populaire">
+            <h2>Les plus polulaires <i class="fas fa-chart-line chart-line"></i></h2>
+            <a href="#">
+                <div class="carte-pop">
+                    <picture>
+                        <source srcset="img/image7_small.jpg" media="">
+                        <img src="img/image7_small.jpg" alt="le soleil du matin">
+                    </picture>
+                    <div>
+                        <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
+                        <p class="pad-left-10 pad-top-10">
+                            Nuit à partir de 128<span style="font-weight: bold;">€</span>
+                        </p>
+                        <p class="pad-left-10 pad-top-45">
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="carte-pop">
+                    <picture>
+                        <source srcset="img/image8_small.jpg" media="">
+                        <img src="img/image8_small.jpg" alt="au coeur de l'eau">
+                    </picture>
+                    <div>
+                        <h3 class="pad-top-10 pad-left-10">Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p class="pad-left-10 pad-top-10">
+                            Nuit à partir de 71<span style="font-weight: bold;">€</span>
+                        </p>
+                        <p class="pad-left-10 pad-top-45">
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="carte-pop">
+                    <picture>
+                        <source srcset="img/image9_small.jpg" media="">
+                        <img src="img/image9_small.jpg" alt="bleu et blanc">
+                    </picture>
+                    <div>
+                        <h3 class="pad-top-10 pad-left-10">Hôtel tout bleu et blanc</h3>
+                        <p class="pad-left-10 pad-top-10">
+                            Nuit à partir de 68<span style="font-weight: bold;">€</span>
+                        </p>
+                        <p class="pad-left-10 pad-top-45">
+                            <span style="color: #0065FC;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span style="color: #F2F2F2;">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- SECTION ACTIVITES-->
+
+    <aside id="activites">
+        <h2>Activités à Marseille</h2>
+        <div class="container-act">
+            <div class="flex">
+
+                <div class="max-img">
+                    <a href="#">
+                        <div class="carte-img-max">
+                            <img src="img/image10_large.jpg" alt="vieux port" class="img-taille" />
+                        </div>
+
+                        <h3 class="pad-20">Vieux port</h3>
+                    </a>
+                </div>
+
+                <div class="carte-double">
+                    <div class="min-img">
+                        <a href="#">
+                            <div class="carte-img-min">
+                                <img src="img/image11_large.jpg" alt="pomègues" class="img-taille" />
+                            </div>
+
+                            <h3 class="pad-20">Fort de Pomègues</h3>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <div class="min-img">
+                            <a href="#">
+                                <div class="carte-img-min">
+                                    <img src="img/image12_large.jpg" alt="frioul" class="img-taille" />
+                                </div>
+                                <h3 class="pad-20">&Icirc;les du Frioul</h3>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="flex">
+                <a href="#">
+                    <div class="max-img">
+                        <a href="#">
+                            <div class="carte-img-max">
+                                <img src="img/image13_large.jpg" alt="calanques" class="img-taille" />
+                            </div>
+                            <h3 class="pad-20">Parc National des Calanques</h3>
+                        </a>
+                    </div>
+                    <div class="carte-double">
+                        <div class="min-img">
+                            <a href="#">
+                                <div class="carte-img-min">
+                                    <img src="img/image14_large.jpg" alt="la garde" class="img-taille" />
+                                </div>
+                                <h3 class="pad-20">Notre-Dame-de-la-Garde</h3>
+                            </a>
+                        </div>
+                        <div class="min-img">
+                            <a href="#">
+                                <div class="carte-img-min">
+                                    <img src="img/image15_large.jpg" alt="longchamp" class="img-taille" />
+                                </div>
+                                <h3 class="pad-20">Parc Longchamp</h3>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- FOOTER-->
+
+    <footer class="background-footer">
+        <div>
+            <div id="container-footer">
+                <div>
+                    <h3>À propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales de vente</p>
+                    <p>Données et confidentialité</p>
+                </div>
+                <div>
+                    <h3>Nos hébergements</h3>
+                    <p>Charte qualité</p>
+                    <p>Soumettre votre hôtel</p>
+                </div>
+                <div>
+                    <h3>Assistance</h3>
+                    <p>Centre d'aide
+                    <p>Nous contacter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
