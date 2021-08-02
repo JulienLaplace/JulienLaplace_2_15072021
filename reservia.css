@@ -274,6 +274,7 @@ footer
 
 .carte-heb img
 {
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 150px;
@@ -311,6 +312,7 @@ footer
 
 .carte-pop img
 {   
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     height: 170px;
@@ -359,6 +361,36 @@ footer
     width: 320px;
 }
   
+.med-img 
+{
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px #aaa;
+    overflow: hidden;
+    height: 350px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.carte-img-med 
+{ 
+    height: 80%;
+}
+
+.med-img-2
+{
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px #aaa;
+    overflow: hidden;
+    height: 210px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.carte-img-med-2 
+{ 
+    height: 70%;
+}
+
 .min-img 
 {
     border-radius: 15px;
