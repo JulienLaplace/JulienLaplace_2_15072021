@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Reservia</title>
-    <link rel="stylesheet" href="reservia.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="css/reservia.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <!-- POLICE RALEWAY-->
@@ -39,20 +39,21 @@
 
     <!-- BARRE DE RECHERCHE -->
 
-    <section>
+    <div class="tablette-section">
         <div id="recherche">
-            <h2><i class="fas fa-map-marker-alt map" style="color: black; "></i></h2>
+            <i class="fas fa-map-marker-alt fa-lg map" style="color: black; "></i>
             <input type="text" placeholder="Marseille, France" style="font-weight: bold; font-size:medium;">
             <button><span class="hidden"><i class="fas fa-search fa-lg" style="color: white;"></i></span>
-                <span class="mobile-texte" style="color: white; font-weight: bold; font-size:medium;"
-                    class="mobile-texte">Rechercher</span>
+                <span class="mobile-texte" style="color: white; font-weight: bold; font-size:medium;">
+                    Rechercher
+                </span>
             </button>
         </div>
-    </section>
+    </div>
 
     <!-- FILTRES -->
 
-    <section>
+    <section class="tablette-section">
         <div>
             <div id="filtre-container">
                 <h3 class="mobile-filtre">Filtres</h3>
@@ -67,7 +68,7 @@
                         <span class="filtre">
                             <i class="fas fa-child"></i>
                         </span>
-                        <p>Familial</p>
+                        <p class="tablette-pad">Familial</p>
                     </div>
                     <div class="filtre-texte">
                         <span class="filtre">
@@ -75,11 +76,11 @@
                         </span>
                         <p>Romantique</p>
                     </div>
-                    <div class="filtre-texte">
-                        <span class="filtre">
-                            <i class="fas fa-dog"></i>
+                    <div class="filtre-texte tablette-dog">
+                        <span class="filtre dog">
+                            <i class="fas fa-dog flex"></i>
                         </span>
-                        <p>Animaux autorisés</p>
+                        <p class="">Animaux autorisés</p>
                     </div>
                 </div>
             </div>
@@ -236,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <h3 class="pad-top-40 pad-left-40">Afficher plus</h3>
+            <h3 class="pad-top-40 pad-left-40 tablette-section2">Afficher plus</h3>
         </div>
 
         <!-- SECTION POPULAIRE-->
@@ -326,7 +327,7 @@
     <aside id="activites">
         <h2>Activités à Marseille</h2>
         <div class="container-act">
-            <div class="flex" id="mobile-flex">
+            <div class="flex mobile-flex">
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
@@ -356,7 +357,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex" id="mobile-flex">
+            <div class="flex mobile-flex">
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
