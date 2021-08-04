@@ -1,0 +1,539 @@
+/* -- SMARTPHONE -- */
+@media (max-width: 375px) {   
+
+/* -- HEADER -- */
+
+header
+{
+    float: left;
+}
+
+.navbar 
+{
+    display: unset;
+    position: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo
+{
+    padding-top: 20px;
+}
+
+.presentation
+{
+    justify-content: flex-start;
+}
+
+#heb
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+}
+
+#act
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 93px;
+}
+
+#ins
+{
+    margin-top: -65px;
+    margin-left: -80px;
+}
+
+/* -- DESCRIPTIF -- */
+
+#descriptif
+{
+    padding-left: 40px;
+}
+
+.mobile-descriptif
+{
+    padding-right: 5px;
+    padding-left: 13px;
+}
+
+/* -- BARRE DE RECHERCHE -- */
+
+#recherche
+{
+    width: 279px;
+    margin-left: 50px;
+}
+
+.hidden
+{
+    display: flex;
+    margin-top: 19px;
+    margin-left: -3px;
+}
+
+.mobile-texte
+{
+    visibility: hidden;
+}
+
+button 
+{
+    background-color: #0065FC;
+    border-radius: 15px;
+    width: 50px;
+}
+
+/* -- SECTION FILTRE -- */
+
+#filtre-container
+{
+    line-break: strict;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-filtre
+{
+    padding: 20px;
+}
+
+.filtre-texte
+{
+    margin-bottom: 20px;
+}
+
+#filtre-hover
+{
+    display: unset;
+    
+}
+
+.container-inf {
+    padding-left: 20px;
+}
+
+/* -- INFO -- */
+
+.info
+{
+
+margin-top: 3px;
+margin-bottom: 5px;
+}
+
+/* -- SECTION HEBERGEMENT -- */
+
+main
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#hebergement 
+{
+    flex-wrap: wrap-reverse;
+}
+
+.background-heb 
+{
+    background-color: transparent;
+}    
+
+.container-heb
+{
+    margin-top: 0px;
+}
+
+#hebergement
+{
+    justify-content: center;
+}
+
+.carte-heb 
+{
+    width: 314px;
+    margin-top: 20px;
+    margin-right: 0px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px #aaa;
+    background-color: white;
+}
+
+/* -- SECTION POPULAIRE -- */
+
+#populaire
+{
+    border-radius: 0px;
+    padding: 30px 40px 40px 40px;
+}
+
+.carte-pop 
+{
+    display: flex;
+    width: 320px;
+    height: 160px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px #aaa;
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.carte-pop img 
+{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 160px;
+    width: 130px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+/* -- SECTION ACTIVITE -- */
+
+#activites 
+{
+    padding-left: 20px;
+}
+
+.container-act 
+{
+    display: unset ;
+}
+
+.max-img 
+{
+    width: 320px;
+    height: 200px;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-height: 220px;
+}
+
+.carte-max-img 
+{
+    height: 70%;
+}
+
+.med-img 
+{
+    height: 210px;
+}
+
+.carte-med-img 
+{
+    height: 70%;
+}
+
+.min-img 
+{
+    height: 210px;
+}
+
+.carte-min-img 
+{
+    height: 70%;
+}
+
+
+
+/* -- FOOTER -- */
+
+footer 
+{
+    padding: 50px;
+}
+
+#container-footer 
+{
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+}
+
+.mobile-pad-title
+{
+margin-bottom: 20px;
+}
+
+.mobile-pad-title
+{
+    margin-bottom: 10px;
+}
+
+/* -- FLEX -- */
+
+
+#mobile-flex
+{
+    display:unset;
+}
+
+.hover-menu:hover
+{
+    border-bottom:solid medium #0065FC;
+    border-top:none;
+}
+
+}
+
+    /*-- TABLETTE --*/
+    
+    
+@media (max-width: 767px) { 
+    
+        header
+        {
+            float: left;
+        }
+        
+        
+        
+        /* -- DESCRIPTIF -- */
+        
+        #descriptif
+        {
+            padding-left: 40px;
+        }
+        
+        .mobile-descriptif
+        {
+            padding-right: 5px;
+            padding-left: 13px;
+        }
+        
+        /* -- BARRE DE RECHERCHE -- */
+        
+        #recherche
+        {
+            width: 279px;
+            margin-left: 50px;
+        }
+        
+        .hidden
+        {
+            display: flex;
+            margin-top: 19px;
+            margin-left: -3px;
+        }
+        
+        .mobile-texte
+        {
+            visibility: hidden;
+        }
+        
+        button 
+        {
+            background-color: #0065FC;
+            border-radius: 15px;
+            width: 50px;
+        }
+        
+        /* -- SECTION FILTRE -- */
+        
+        #filtre-container
+        {
+            line-break: strict;
+            padding-left: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .mobile-filtre
+        {
+            padding: 20px;
+        }
+        
+        .filtre-texte
+        {
+            margin-bottom: 20px;
+        }
+        
+        #filtre-hover
+        {
+            display: unset;
+            
+        }
+        
+        .container-inf {
+            padding-left: 20px;
+        }
+        
+        /* -- INFO -- */
+        
+        .info
+        {
+        
+        margin-top: 3px;
+        margin-bottom: 5px;
+        }
+        
+        /* -- SECTION HEBERGEMENT -- */
+        
+        main
+        {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        #hebergement 
+        {
+            flex-wrap: wrap-reverse;
+        }
+        
+        .background-heb 
+        {
+            background-color: transparent;
+        }    
+        
+        .container-heb
+        {
+            margin-top: 0px;
+        }
+        
+        #hebergement
+        {
+            justify-content: center;
+        }
+        
+        .carte-heb 
+        {
+            width: 314px;
+            margin-top: 20px;
+            margin-right: 0px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px -5px #aaa;
+            background-color: white;
+        }
+        
+        /* -- SECTION POPULAIRE -- */
+        
+        #populaire
+        {
+            border-radius: 0px;
+            padding: 30px 130px 40px 130px;
+        }
+        
+        .carte-pop 
+        {
+            display: flex;
+            width: 320px;
+            height: 160px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px -5px #aaa;
+            background-color: white;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .carte-pop img 
+        {
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            height: 160px;
+            width: 130px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 7px;
+        }
+        
+        /* -- SECTION ACTIVITE -- */
+        
+        #activites 
+        {
+            padding-left: 20px;
+        }
+        
+        .container-act 
+        {
+            display: unset ;
+        }
+        
+        .max-img 
+        {
+            width: 320px;
+            height: 200px;
+            margin-right: 0px;
+            margin-left: 0px;
+            min-height: 220px;
+        }
+        
+        .carte-max-img 
+        {
+            height: 70%;
+        }
+        
+        .med-img 
+        {
+            height: 210px;
+        }
+        
+        .carte-med-img 
+        {
+            height: 70%;
+        }
+        
+        .min-img 
+        {
+            height: 210px;
+        }
+        
+        .carte-min-img 
+        {
+            height: 70%;
+        }
+        
+        
+        
+        /* -- FOOTER -- */
+        
+        footer 
+        {
+            padding: 50px;
+        }
+        
+        #container-footer 
+        {
+            padding-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: unset;
+        }
+        
+        .mobile-pad-title
+        {
+        margin-bottom: 20px;
+        }
+        
+        .mobile-pad-title
+        {
+            margin-bottom: 10px;
+        }
+        
+        /* -- FLEX -- */
+        
+        
+        #mobile-flex
+        {
+            display:unset;
+        }
+        
+        .hover-menu:hover
+        {
+            border-bottom:solid medium #0065FC;
+            border-top:none;
+        }
+
+    }
