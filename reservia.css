@@ -18,6 +18,8 @@ h4
     font-weight: normal;
 }
 
+
+
 button 
 {
     background-color: #0065FC;
@@ -162,6 +164,11 @@ footer
 .map
 {
     padding:16px ;
+}
+
+.hidden
+{
+    display: none;
 }
 
 /*-- FILTRE --*/
@@ -427,9 +434,7 @@ footer
     flex-wrap: wrap;
     justify-content: space-between;
     width: 77%;
-    margin-left: -40px;
-}   
-
+}
 /*-- FLEX --*/
 
 .flex 
@@ -454,9 +459,9 @@ footer
     padding-top: 40px;
 }
 
-.pad-top-45
+.pad-top-60
 {
-    padding-top: 45px;
+    padding-top: 60px;
 }
 
 .pad-bottom-10
@@ -488,3 +493,9 @@ footer
     border-color: white;
     color: #0065FC;
 }
+
+/* -- MOBILE -- */
+
+
+
+/* -- TABLETTE -- */
