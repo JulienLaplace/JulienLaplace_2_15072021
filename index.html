@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Reservia</title>
     <link rel="stylesheet" href="reservia.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <!-- POLICE RALEWAY-->
@@ -18,7 +19,7 @@
 
     <header>
         <div class="navbar">
-            <img class="logo" src="img/Reservia@3x.png" alt="logo" />
+            <img id="logo" class="logo" src="img/Reservia@3x.png" alt="logo" />
             <nav class="presentation">
                 <a href="#hebergement" id="heb" class="hover-menu">Hébergements</a>
                 <a href="#activites" id="act" class="hover-menu">Activités</a>
@@ -30,8 +31,10 @@
     <!-- DESCRIPTIF -->
 
     <section id="descriptif">
-        <h2 class="pad-bottom-10"><span>Trouvez votre hébergement pour des vacances de rêves</span></h2>
-        <h4>En plein centre ville ou en pleine nature</h4>
+        <h2 class="pad-bottom-10 mobile-descriptif"><span>Trouvez votre hébergement pour des
+                vacances de
+                rêves</span></h2>
+        <h4 class="mobile-descriptif">En plein centre ville ou en pleine nature</h4>
     </section>
 
     <!-- BARRE DE RECHERCHE -->
@@ -40,8 +43,9 @@
         <div id="recherche">
             <h2><i class="fas fa-map-marker-alt map" style="color: black; "></i></h2>
             <input type="text" placeholder="Marseille, France" style="font-weight: bold; font-size:medium;">
-            <button>
-                <span style="color: white; font-weight: bold; font-size:medium;">Rechercher</span>
+            <button><span class="hidden"><i class="fas fa-search fa-lg" style="color: white;"></i></span>
+                <span class="mobile-texte" style="color: white; font-weight: bold; font-size:medium;"
+                    class="mobile-texte">Rechercher</span>
             </button>
         </div>
     </section>
@@ -51,7 +55,7 @@
     <section>
         <div>
             <div id="filtre-container">
-                <h3>Filtres</h3>
+                <h3 class="mobile-filtre">Filtres</h3>
                 <div id="filtre-hover" class="hover">
                     <div class="filtre-texte">
                         <span class="filtre">
@@ -238,80 +242,82 @@
         <!-- SECTION POPULAIRE-->
 
         <div id="populaire">
-            <h2>Les plus polulaires <i class="fas fa-chart-line chart-line"></i></h2>
-            <a href="#">
-                <div class="carte-pop">
-                    <picture>
-                        <source srcset="img/image7_small.jpg" media="">
-                        <img src="img/image7_small.jpg" alt="le soleil du matin">
-                    </picture>
-                    <div>
-                        <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
-                        <p class="pad-left-10 pad-top-10">
-                            Nuit à partir de 128<span style="font-weight: bold;">€</span>
-                        </p>
-                        <p class="pad-left-10 pad-top-45">
-                            <span style="color: #0065FC;">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                        </p>
+            <div class="background-pop">
+                <h2>Les plus polulaires <i class="fas fa-chart-line chart-line"></i></h2>
+                <a href="#">
+                    <div class="carte-pop">
+                        <picture>
+                            <source srcset="img/image7_small.jpg" media="">
+                            <img src="img/image7_small.jpg" alt="le soleil du matin">
+                        </picture>
+                        <div>
+                            <h3 class="pad-top-10 pad-left-10">Hôtel Le soleil du matin</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 128<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-60">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="carte-pop">
-                    <picture>
-                        <source srcset="img/image8_small.jpg" media="">
-                        <img src="img/image8_small.jpg" alt="au coeur de l'eau">
-                    </picture>
-                    <div>
-                        <h3 class="pad-top-10 pad-left-10">Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p class="pad-left-10 pad-top-10">
-                            Nuit à partir de 71<span style="font-weight: bold;">€</span>
-                        </p>
-                        <p class="pad-left-10 pad-top-45">
-                            <span style="color: #0065FC;">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span style="color: #F2F2F2;">
-                                <i class="fas fa-star"></i>
-                            </span>
-                        </p>
+                </a>
+                <a href="#">
+                    <div class="carte-pop">
+                        <picture>
+                            <source srcset="img/image8_small.jpg" media="">
+                            <img src="img/image8_small.jpg" alt="au coeur de l'eau">
+                        </picture>
+                        <div>
+                            <h3 class="pad-top-10 pad-left-10">Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 71<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-60">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="carte-pop">
-                    <picture>
-                        <source srcset="img/image9_small.jpg" media="">
-                        <img src="img/image9_small.jpg" alt="bleu et blanc">
-                    </picture>
-                    <div>
-                        <h3 class="pad-top-10 pad-left-10">Hôtel tout bleu et blanc</h3>
-                        <p class="pad-left-10 pad-top-10">
-                            Nuit à partir de 68<span style="font-weight: bold;">€</span>
-                        </p>
-                        <p class="pad-left-10 pad-top-45">
-                            <span style="color: #0065FC;">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span style="color: #F2F2F2;">
-                                <i class="fas fa-star"></i>
-                            </span>
-                        </p>
+                </a>
+                <a href="#">
+                    <div class="carte-pop">
+                        <picture>
+                            <source srcset="img/image9_small.jpg" media="">
+                            <img src="img/image9_small.jpg" alt="bleu et blanc">
+                        </picture>
+                        <div>
+                            <h3 class="pad-top-10 pad-left-10">Hôtel tout bleu et blanc</h3>
+                            <p class="pad-left-10 pad-top-10">
+                                Nuit à partir de 68<span style="font-weight: bold;">€</span>
+                            </p>
+                            <p class="pad-left-10 pad-top-60">
+                                <span style="color: #0065FC;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span style="color: #F2F2F2;">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </main>
 
@@ -320,7 +326,7 @@
     <aside id="activites">
         <h2>Activités à Marseille</h2>
         <div class="container-act">
-            <div class="flex">
+            <div class="flex" id="mobile-flex">
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
@@ -350,7 +356,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex" id="mobile-flex">
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
@@ -387,20 +393,20 @@
         <div>
             <div id="container-footer">
                 <div>
-                    <h3>À propos</h3>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales de vente</p>
-                    <p>Données et confidentialité</p>
+                    <h3 class="mobile-pad-title">À propos</h3>
+                    <p class="mobile-pad">Fonctionnement du site</p>
+                    <p class="mobile-pad">Conditions générales de vente</p>
+                    <p class="mobile-pad mobile-pad-title">Données et confidentialité</p>
                 </div>
                 <div>
-                    <h3>Nos hébergements</h3>
-                    <p>Charte qualité</p>
-                    <p>Soumettre votre hôtel</p>
+                    <h3 class="mobile-pad-title">Nos hébergements</h3>
+                    <p class="mobile-pad">Charte qualité</p>
+                    <p class="mobile-pad mobile-pad-title">Soumettre votre hôtel</p>
                 </div>
                 <div>
-                    <h3>Assistance</h3>
-                    <p>Centre d'aide
-                    <p>Nous contacter</p>
+                    <h3 class="mobile-pad-title">Assistance</h3>
+                    <p class="mobile-pad">Centre d'aide
+                    <p class="mobile-pad mobile-pad-title">Nous contacter</p>
                 </div>
             </div>
         </div>
