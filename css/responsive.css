@@ -1,13 +1,8 @@
 /* -- SMARTPHONE -- */
 
-@media (max-width: 375px) 
+@media (min-width: 375px) and (max-width: 767px)
 {   
     /* -- HEADER -- */
-
-    header
-    {
-        float: left;
-    }
 
     .navbar 
     {
@@ -22,49 +17,74 @@
         padding-top: 20px;
     }
 
+    .presentation, a {
+        
+        justify-content: center;
+    }
+
     .presentation
     {
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
     }
 
     #heb
     {
-        padding-top: 20px;
+        display: flex;
+        border-top: unset !important;
+        border-bottom:solid medium #e0e0e0;
+        justify-content: center;
         padding-bottom: 10px;
-        padding-left: 70px;
+        padding-left: 20px;
+        padding-right: 0px;
+        width: 50%;
     }
 
     #act
     {
-        padding-top: 20px;
+        display: flex;
+        border-top: unset !important;
+        border-bottom:solid medium #e0e0e0;
+        justify-content: center;
         padding-bottom: 10px;
-        padding-right: 93px;
+        padding-right: 20px;
+        width: 50%;
     }
 
     #ins
     {
-        margin-top: -65px;
-        margin-left: -80px;
+        font-weight: bold;
+        color: #0065FC;
+        position: absolute;
+        top: 5px;
+        right: 30px;
+
     }
 
     /* -- DESCRIPTIF -- */
 
-    #descriptif
-    {
-        padding-left: 40px;
-    }
-
-    .mobile-descriptif
-    {
-        padding-right: 5px;
-        padding-left: 13px;
-    }
 
     /* -- BARRE DE RECHERCHE -- */
 
+    input
+    {
+        width: 190px;
+    }
+
+    #section-recherche
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #descriptif
+    {
+        padding-top: 0px;
+    }
+
     #recherche
     {
-        width: 279px;
+        width: 88%;
         margin-left: 50px;
     }
 
@@ -77,6 +97,7 @@
 
     .mobile-texte
     {
+        font-weight: 500;
         visibility: hidden;
     }
 
@@ -102,21 +123,6 @@
         padding: 20px;
     }
 
-    .filtre-texte
-    {
-        margin-bottom: 20px;
-    }
-
-    #filtre-hover
-    {
-        display: unset;
-        
-    }
-
-    .container-inf {
-        padding-left: 20px;
-    }
-
     /* -- INFO -- */
 
     .info
@@ -128,6 +134,8 @@
 
     /* -- SECTION HEBERGEMENT -- */
 
+    
+
     main
     {
         padding-left: 0px;
@@ -136,27 +144,23 @@
 
     #hebergement 
     {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        justify-content: center;
         flex-wrap: wrap-reverse;
     }
 
     .background-heb 
     {
+        width: 100%;
         background-color: transparent;
     }    
 
-    .container-heb
-    {
-        margin-top: 0px;
-    }
-
-    #hebergement
-    {
-        justify-content: center;
-    }
-
+    
     .carte-heb 
     {
-        width: 314px;
+        width: 100%;
         margin-top: 20px;
         margin-right: 0px;
         border-radius: 15px;
@@ -168,14 +172,18 @@
 
     #populaire
     {
+        width: 100%;
         border-radius: 0px;
-        padding: 30px 40px 40px 40px;
+        padding: 30px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .carte-pop 
     {
         display: flex;
-        width: 320px;
+        width: 100%;
         height: 160px;
         margin-top: 30px;
         margin-bottom: 0px;
@@ -202,17 +210,25 @@
 
     #activites 
     {
-        padding-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .carte-double
+    {
+        width: 100%;
     }
 
     .container-act 
     {
-        display: unset ;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-
     .max-img 
     {
-        width: 320px;
+        width: 100%;
+        min-width: 320px;
         height: 200px;
         margin-right: 0px;
         margin-left: 0px;
@@ -226,6 +242,8 @@
 
     .med-img 
     {
+        width: 100%;
+        min-width: 320px;
         height: 210px;
     }
 
@@ -236,6 +254,8 @@
 
     .min-img 
     {
+        width: 100%;
+        min-width: 320px;
         height: 210px;
     }
 
@@ -248,15 +268,12 @@
 
     footer 
     {
-        padding: 50px;
+        padding: 30px;
     }
 
     #container-footer 
     {
-        padding-left: 0px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: unset;
+        flex-direction: column;
     }
 
     .mobile-pad-title
@@ -279,7 +296,7 @@
 
     .hover-menu:hover
     {
-        border-bottom:solid medium #0065FC;
+        border-bottom:solid medium #0065FC !important;
         border-top:none;
 }
 
@@ -287,47 +304,52 @@
 
     /*-- TABLETTE --*/
      
-@media (max-width: 768px) and (min-width: 376px)
+@media (max-width: 1199px) and (min-width: 768px)
 { 
 
     /* -- HEADER -- */
 
-    .navbar 
+    #act
     {
-        padding-left: 50px;
-        padding-right: 50px;
+        border-top:solid medium transparent;
     }
-    
+
+    #act
+    {
+        border-top:solid medium transparent;
+    }
     /* -- DESCRIPTIF -- */
     
-    #descriptif
-    {
-        padding-left: 40px;
-    }
-    
-    .mobile-descriptif
-    {
-        padding-left: 13px;
-    }
     
     /* -- BARRE DE RECHERCHE -- */
     
-    .tablette-section
+    #section-recherche
     {
-        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-bottom: 30px;
     }
     
-    #recherche
+    .recherche
     {
         width: 279px;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     
     /* -- SECTION FILTRE -- */
     
+    .filtre-ul
+    {
+        flex-wrap: unset;
+    }
+
     .filtre
     {
         width: 45px;
+    }
+
+    .icone
+    {
+        margin-right: 5px;
     }
 
     .tablette-dog p
@@ -364,9 +386,6 @@
         padding-left: 50px;
         display: unset;
     }    
-    .container-inf {
-        padding-left: 50px;
-    }
     
     /* -- SECTION HEBERGEMENT -- */
     
@@ -376,30 +395,26 @@
         padding-right: 0px;
     }
     
-    #hebergement 
+    #hebergement
     {
-        display: unset;
-        flex-wrap: wrap-reverse;
+        flex-wrap: unset;
     }
     
     .background-heb 
     {
-        background-color: transparent;
+        width: 100%;
+        margin-right: 0px;
+        border-radius: 25px 0px 0px 25px;
     }    
     
     .container-heb
     {
         margin-top: 0px;
     }
-    
-    #hebergement
-    {
-        justify-content: center;
-    }
-    
+        
     .carte-heb 
     {
-        width: 314px;
+        width: 100%;
         margin-top: 30px;
         margin-right: 30px;
         border-radius: 15px;
@@ -416,14 +431,26 @@
     
     #populaire
     {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         border-radius: 0px;
-        padding:30px 125px 40px 124px;
+        padding: 30px 20px 0px 0px;
+        border-radius: 0px 25px 25px 0px;
+        
     }
     
+    .background-pop
+    {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .carte-pop 
     {
         display: flex;
-        width: 520px;
+        width: 100%;
         height: 160px;
         margin-top: 30px;
         margin-bottom: 0px;
@@ -440,7 +467,7 @@
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         height: 160px;
-        width: 260px;
+        width: 140px;
         padding-top: 7px;
         padding-bottom: 7px;
         padding-left: 7px;
@@ -450,13 +477,12 @@
     
     #activites 
     {
-        padding-left: 40px;
-        padding-top: 40px;
+        padding-top: 20px;
     }
     
     .max-img 
     {
-        width: 320px;
+        width: 100%;
         height: 200px;
         margin-right: 0px;
         margin-left: 0px;
@@ -471,8 +497,15 @@
     .med-img 
     {
         height: 210px;
+        min-width: 320px;
     }
     
+    .med-img-2
+    {
+        height: 210px;
+        min-width: 320px;
+    }
+
     .carte-med-img 
     {
         height: 70%;
@@ -481,6 +514,8 @@
     .min-img 
     {
         height: 210px;
+        width: 100%;
+        min-width: 320px;
     }
     
     .carte-min-img 
@@ -488,6 +523,11 @@
         height: 70%;
     }
     
+    .carte-double
+    {
+        width: 100%;
+    }
+
     /* -- FOOTER -- */
     
     footer 
@@ -506,8 +546,16 @@
     
     .mobile-flex
     {
+        justify-content: space-between;
+        width: 50%;
         display:unset;
-        padding-left: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hover-menu:hover
+    {
+        border-top:solid medium #0065FC;
     }
 
 }
