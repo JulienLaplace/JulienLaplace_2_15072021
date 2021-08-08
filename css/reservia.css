@@ -410,9 +410,9 @@ aside
     overflow: hidden;
     width: 50%;
     min-height: 445px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     border-radius: 15px;
     height: 600px;
 }
@@ -448,7 +448,6 @@ aside
     box-shadow: 5px 5px 15px -5px #aaa;
     overflow: hidden;
     height: 210px;
-    margin-bottom: 40px;
     border-radius: 15px;
 }
 
@@ -564,6 +563,3 @@ aside
     border-color: #DEEBFF;
     color: #0065FC;
 }
-
-
-
