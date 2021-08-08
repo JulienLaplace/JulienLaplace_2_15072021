@@ -121,6 +121,11 @@
 
     /* -- SECTION FILTRE -- */
 
+    .filtre-titre {
+        width:100%;
+        margin-top:0;
+    }
+
     #filtre-container
     {
         line-break: strict;
@@ -348,9 +353,15 @@
     
     /* -- SECTION FILTRE -- */
     
+    
     .filtre-ul
     {
         flex-wrap: unset;
+    }
+
+    .filtre-li
+    {
+        padding-right: 8px;
     }
 
     .filtre
