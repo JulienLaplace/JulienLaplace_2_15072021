@@ -22,25 +22,12 @@
         padding-top: 20px;
     }
 
-    .presentation, a {
-        
-        justify-content: center;
-    }
-
-    .presentation
-    {
-        display: flex;
-        justify-content: center;
-    }
-
     #heb
     {
         display: flex;
         border-top: unset !important;
         border-bottom:solid medium #e0e0e0;
         justify-content: center;
-        padding-bottom: 10px;
-        padding-left: 20px;
         padding-right: 0px;
         width: 50%;
     }
@@ -67,15 +54,13 @@
     }
 
     /* -- DESCRIPTIF -- */
-
+    
+    #descriptif
+    {
+        padding-top: 0px;
+    }
 
     /* -- BARRE DE RECHERCHE -- */
-
-    input
-    {
-        width: 190px;
-        margin: 2px -6px 0px 0px;
-    }
 
     #section-recherche
     {
@@ -83,20 +68,22 @@
         justify-content: flex-start;
     }
 
-    #descriptif
-    {
-        padding-top: 0px;
-    }
-
-    #recherche
-    {
-        width: 88%;
-        margin-left: 50px;
-    }
-
     .recherche
     {
         width: 280px;
+    }
+
+    input
+    {
+        width: 190px;
+        margin: 2px -6px 0px 0px;
+    }
+    
+    button 
+    {
+        background-color: #0065FC;
+        border-radius: 15px;
+        width: 50px;
     }
 
     .hidden
@@ -112,45 +99,23 @@
         visibility: hidden;
     }
 
-    button 
-    {
-        background-color: #0065FC;
-        border-radius: 15px;
-        width: 50px;
-    }
-
     /* -- SECTION FILTRE -- */
 
-    .filtre-titre {
+    .filtre-titre 
+    {
         width:100%;
         margin-top:0;
-    }
-
-    #filtre-container
-    {
-        line-break: strict;
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .mobile-filtre
-    {
-        padding: 20px;
     }
 
     /* -- INFO -- */
 
     .info
     {
-
-    margin-top: 3px;
-    margin-bottom: 5px;
+        margin-top: 3px;
+        margin-bottom: 5px;
     }
 
     /* -- SECTION HEBERGEMENT -- */
-
-    
 
     main
     {
@@ -173,7 +138,6 @@
         background-color: transparent;
     }    
 
-    
     .carte-heb 
     {
         width: 100%;
@@ -230,17 +194,13 @@
         padding-right: 10px;
     }
 
-    .carte-double
-    {
-        width: 100%;
-    }
-
     .container-act 
     {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .max-img 
     {
         width: 100%;
@@ -254,6 +214,11 @@
     .carte-max-img 
     {
         height: 70%;
+    }
+
+    .carte-double
+    {
+        width: 100%;
     }
 
     .med-img 
@@ -291,34 +256,30 @@
     {
         flex-direction: column;
     }
-
-    .mobile-pad-title
-    {
-    margin-bottom: 20px;
-    }
-
+    
     .mobile-pad-title
     {
         margin-bottom: 10px;
     }
 
     /* -- FLEX -- */
-
-
+    
     .mobile-flex
     {
         display:unset;
     }
 
+    /* -- HOVER -- */
+
     .hover-menu:hover
     {
         border-bottom:solid medium #0065FC !important;
         border-top:none;
-}
+    }
 
 }
 
-    /*-- TABLETTE --*/
+/*-- TABLETTE --*/
      
 @media (max-width: 1199px) and (min-width: 768px)
 { 
@@ -334,9 +295,7 @@
     {
         border-top:solid medium transparent;
     }
-    /* -- DESCRIPTIF -- */
-    
-    
+
     /* -- BARRE DE RECHERCHE -- */
     
     #section-recherche
@@ -353,7 +312,6 @@
     
     /* -- SECTION FILTRE -- */
     
-    
     .filtre-ul
     {
         flex-wrap: unset;
@@ -364,51 +322,11 @@
         padding-right: 8px;
     }
 
-    .filtre
-    {
-        width: 45px;
-    }
-
     .icone
     {
         margin-right: 5px;
     }
 
-    .tablette-dog p
-    {
-        margin: 6px 24px 16px 24px;
-    }
-
-    .filtre-texte 
-    {
-        display: flex;
-        border: 2px solid #e0e0e0;
-        border-radius: 50px;
-        margin-left: 5px;
-        margin-right: 0px;
-        cursor: pointer;
-        height: 50px;
-        width: 185px;
-    }
-    
-    .mobile-filtre
-    {
-        padding-left: 50px;
-        padding-bottom: 20px;
-    }
-    
-    .dog
-    {
-        display: flex;
-        width: 70px;
-    }
-
-    #filtre-container 
-    {
-        padding-left: 50px;
-        display: unset;
-    }    
-    
     /* -- SECTION HEBERGEMENT -- */
     
     main
@@ -444,7 +362,7 @@
         background-color: white;
     }
     
-    .tablette-section2
+    .tablette-titre
     {
         padding-bottom: 40px;
     }
@@ -465,8 +383,7 @@
     .background-pop
     {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .carte-pop 
@@ -516,21 +433,26 @@
         height: 70%;
     }
     
+    .carte-double
+    {
+        width: 100%;
+    }
+
     .med-img 
     {
         height: 210px;
         min-width: 320px;
     }
     
+    .carte-med-img 
+    {
+        height: 70%;
+    }
+    
     .med-img-2
     {
         height: 210px;
         min-width: 320px;
-    }
-
-    .carte-med-img 
-    {
-        height: 70%;
     }
     
     .min-img 
@@ -545,11 +467,6 @@
         height: 70%;
     }
     
-    .carte-double
-    {
-        width: 100%;
-    }
-
     /* -- FOOTER -- */
     
     footer 
