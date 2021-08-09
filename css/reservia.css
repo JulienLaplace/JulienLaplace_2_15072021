@@ -23,19 +23,6 @@ h4
     font-weight: normal;
 }
 
-
-
-button 
-{
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    width: 140px;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor:pointer;
-}
-
 input 
 {
     width: 180px;
@@ -43,7 +30,7 @@ input
     padding-left: 20px;
     border: none;
     margin: auto 0;
-    outline:none;
+    outline:none; /* Enlêve le contour de l'input */
 }
 
 input::placeholder 
@@ -52,18 +39,24 @@ input::placeholder
     opacity: 1;
 }
 
-li {
-    list-style-type: none;
-    margin: auto 0; /*centre verticalement*/
+button 
+{
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor:pointer;
 }
 
-ul {
-    padding: 0;
+li 
+{
+    list-style-type: none;
 }
 
 main
 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 section
@@ -97,7 +90,6 @@ footer
 #heb
 { 
     border-top: solid medium transparent;
-    border-left: 20px;
     margin-bottom: 20px;
     padding-top: 36px;
     padding-left: 20px;
@@ -108,11 +100,9 @@ footer
 {
     border-top: solid medium transparent;
     margin-bottom: 20px;
-    border-left: 20px;
-    margin-bottom: 20px;
     padding-top: 36px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -154,9 +144,6 @@ footer
 
 #descriptif 
 {
-    background: white;
-    background-size: cover;
-    background-position: center;
     padding-bottom: 25px;
     padding-top: 50px;
     padding-left: 30px;
@@ -176,7 +163,7 @@ footer
     display: flex;
     background-color: #F2F2F2;
     width: 290px;
-    height: 50px;
+    height: 49px;
     border-radius: 15px;  
 }
   
@@ -217,7 +204,6 @@ footer
     margin-top: 10px;
     margin-right: 20px;
     cursor: pointer;
-    
     font-weight: bold;
     border-radius: 35px;
 }
@@ -234,55 +220,7 @@ footer
     border-radius: 35px;
 }
 
-#filtre-container 
-{
-    padding-top: 40px;
-    display: flex;   
-}
-
-#filtre-container h3 
-{
-    margin-right: 15px;
-    margin-top: 15px;
-}
-
-#filtre-hover
-{
-    display:flex;
-    padding-bottom: 30px;
-}
-
-.filtre-texte
-{
-    display: flex;
-    border: 2px solid #e0e0e0;
-    border-radius: 50px;
-    margin-right: 24px;
-    cursor: pointer;
-}
-
-.filtre-texte p 
-{
-    margin: 16px 24px 16px 24px;
-    font-weight: 900;
-}
-
-.filtre
-{   
-    background-color:#DEEBFF;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    color: #0065FC;
-    position: relative;
-    left: -2px;
-    width: 50px;
-}
-
 /* -- ICONE INFO -- */
-
-
 
 .info 
 {
@@ -316,21 +254,15 @@ footer
     padding-top: 30px;
 }
 
-.background
-{
-    justify-content: space-between;
-}
-
 .container-heb
 {
     display: flex;
-    justify-content: stretch;
     flex-wrap: wrap;
 }
 
 .carte-heb
 {
-    width: 29%;
+    width: 28.5%;
     margin-top: 30px;
     margin-right: 0px;
     border-radius: 15px;
@@ -355,10 +287,10 @@ footer
 
 #populaire
 {
-    width: 25%;
+    width: 33%;
     background-color: #F2F2F2;
-    border-radius:25px;
-    padding: 30px 30px 0px 30px;;
+    border-radius: 25px;
+    padding: 30px 30px 0px 30px;
 }
 
 .chart-line
@@ -371,7 +303,7 @@ footer
     display: flex;
     height: 170px;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px -5px #aaa;
     background-color: white;
@@ -391,11 +323,6 @@ footer
 
 /*-- SECTION ACTIVITE --*/
 
-aside
-{
-    display: block;
-}
-
 .container-act
 {
     display: flex;
@@ -409,12 +336,11 @@ aside
     box-shadow: 5px 5px 15px -5px #aaa;
     overflow: hidden;
     width: 50%;
-    min-height: 445px;
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
     border-radius: 15px;
-    height: 600px;
+    height: 590px;
 }
 
 .carte-max-img 
@@ -429,11 +355,10 @@ aside
 
 .med-img 
 {
-    border-radius: 15px;
     box-shadow: 5px 5px 15px -5px #aaa;
     overflow: hidden;
     height: 350px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 15px;
 }
 
@@ -444,11 +369,11 @@ aside
 
 .med-img-2
 {
-    border-radius: 15px;
     box-shadow: 5px 5px 15px -5px #aaa;
     overflow: hidden;
     height: 210px;
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .carte-med-img-2 
@@ -458,12 +383,11 @@ aside
 
 .min-img 
 {
-    border-radius: 15px;
     box-shadow: 5px 5px 15px -5px #aaa;
     overflow: hidden;
     height: 280px;
     width: 90%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 15px;
 }
 
@@ -488,12 +412,11 @@ aside
 
 #container-footer 
 {
-    
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 77%;
 }
+
 /*-- FLEX --*/
 
 .flex 
@@ -513,14 +436,14 @@ aside
     padding-top: 10px;
 }
 
-.pad-top-30
-{
-    padding-top: 30px;
-}
-
 .pad-top-20
 {
     padding-top: 20px;
+}
+
+.pad-top-30
+{
+    padding-top: 30px;
 }
 
 .pad-bottom-10
@@ -530,12 +453,7 @@ aside
 
 .pad-left-10
 {
-    padding-left: 20px;
-}
-
-.pad-left-20
-{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .pad-left-30
