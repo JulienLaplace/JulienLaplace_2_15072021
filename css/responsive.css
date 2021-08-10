@@ -40,6 +40,7 @@
         justify-content: center;
         padding-bottom: 10px;
         padding-right: 20px;
+        margin-right: 0px;
         width: 50%;
     }
 
@@ -496,5 +497,4 @@
     {
         border-top:solid medium #0065FC;
     }
-
 }
