@@ -53,8 +53,8 @@
     </div>
 
     <!-- FILTRE -->
-    <section>
-        <ul class="filtre-ul hover">
+    <div>
+        <ul class="filtre-ul hover pad-left-30">
             <li class="filtre-titre" style="background-color: transparent; color: black;">
                 Filtres
             </li>
@@ -75,25 +75,25 @@
                 Animaux autorisés
             </li>
         </ul>
+    </div>
 
+    <!-- ICONE INFO -->
 
-        <!-- ICONE INFO -->
-
-        <div class="pad-top-30">
-            <div class="flex">
-                <div class="info"><i class="fas fa-info" style="color: #0065FC;"></i>
-                </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    <div id="info">
+        <div class="flex">
+            <div class="info"><i class="fas fa-info" style="color: #0065FC;"></i>
             </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-    </section>
+    </div>
+
 
     <!-- SECTION HEBERGEMENT -->
 
     <main id="hebergement">
         <div class="background-heb">
             <div>
-                <h2 class="pad-left-30">Hébergements à Marseille</h2>
+                <h2 class="pad-left-30 pad-left-mobile pad-left-tablette">Hébergements à Marseille</h2>
                 <div class="container-heb">
                     <div class="carte-heb">
                         <a href="#">
@@ -239,7 +239,7 @@
                         </a>
                     </div>
                 </div>
-                <h3 class="pad-top-30 pad-left-30 tablette-titre">Afficher plus</h3>
+                <h3 class="pad-top-30 pad-left-30 tablette-titre mobile-titre">Afficher plus</h3>
             </div>
 
         </div>
@@ -335,15 +335,19 @@
     <!-- SECTION ACTIVITES-->
 
     <aside id="activites">
-        <h2 class="pad-left-30">Activités à Marseille</h2>
+        <h2 class="pad-left-30 pad-left-20">Activités à Marseille</h2>
         <div class="container-act">
             <div class="flex mobile-flex">
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
-                            <img src="img/large/image10_large.jpg" alt="vieux port" class="img-taille" />
+                            <picture>
+                                <source srcset="img/large/image10_large.jpg" media="(min-width:1200px)">
+                                <source srcset="img/medium/image10_medium.jpg"
+                                    media="(min-width:768px) and (max-width: 1199px)">
+                                <img src="img/small/image10_small.jpg" alt="vieux port" class="img-taille" />
+                            </picture>
                         </div>
-
                         <h3 class="pad-20">Vieux port</h3>
                     </a>
                 </div>
@@ -351,16 +355,25 @@
                     <div class="med-img">
                         <a href="#">
                             <div class="carte-med-img">
-                                <img src="img/large/image11_large.jpg" alt="pomègues" class="img-taille" />
+                                <picture>
+                                    <source srcset="img/large/image11_large.jpg" media="(min-width:1200px)">
+                                    <source srcset="img/medium/image11_medium.jpg"
+                                        media="(min-width:768px) and (max-width: 1199px)">
+                                    <img src="img/small/image11_small.jpg" alt="pomègues" class="img-taille" />
+                                </picture>
                             </div>
-
                             <h3 class="pad-20">Fort de Pomègues</h3>
                         </a>
                     </div>
                     <div class="med-img-2">
                         <a href="#">
                             <div class="carte-med-img-2">
-                                <img src="img/large/image12_large.jpg" alt="frioul" class="img-taille" />
+                                <picture>
+                                    <source srcset="img/large/image12_large.jpg" media="(min-width:1200px)">
+                                    <source srcset="img/medium/image12_medium.jpg"
+                                        media="(min-width:768px) and (max-width: 1199px)">
+                                    <img src="img/small/image12_small.jpg" alt="frioul" class="img-taille" />
+                                </picture>
                             </div>
                             <h3 class="pad-20">&Icirc;les du Frioul</h3>
                         </a>
@@ -371,7 +384,12 @@
                 <div class="max-img">
                     <a href="#">
                         <div class="carte-max-img">
-                            <img src="img/large/image13_large.jpg" alt="calanques" class="img-taille" />
+                            <picture>
+                                <source srcset="img/large/image13_large.jpg" media="(min-width:1200px)">
+                                <source srcset="img/medium/image13_medium.jpg"
+                                    media="(min-width:768px) and (max-width: 1199px)">
+                                <img src="img/small/image13_small.jpg" alt="calanques" class="img-taille" />
+                            </picture>
                         </div>
                         <h3 class="pad-20">Parc National des Calanques</h3>
                     </a>
@@ -380,7 +398,12 @@
                     <div class="min-img">
                         <a href="#">
                             <div class="carte-min-img">
-                                <img src="img/large/image14_large.jpg" alt="la garde" class="img-taille" />
+                                <picture>
+                                    <source srcset="img/large/image14_large.jpg" media="(min-width:1200px)">
+                                    <source srcset="img/medium/image14_medium.jpg"
+                                        media="(min-width:768px) and (max-width: 1199px)">
+                                    <img src="img/small/image14_small.jpg" alt="la garde" class="img-taille" />
+                                </picture>
                             </div>
                             <h3 class="pad-20">Notre-Dame-de-la-Garde</h3>
                         </a>
@@ -388,7 +411,12 @@
                     <div class="min-img">
                         <a href="#">
                             <div class="carte-min-img">
-                                <img src="img/large/image15_large.jpg" alt="longchamp" class="img-taille" />
+                                <picture>
+                                    <source srcset="img/large/image15_large.jpg" media="(min-width:1200px)">
+                                    <source srcset="img/medium/image15_medium.jpg"
+                                        media="(min-width:768px) and (max-width: 1199px)">
+                                    <img src="img/small/image15_small.jpg" alt="longchamp" class="img-taille" />
+                                </picture>
                             </div>
                             <h3 class="pad-20">Parc Longchamp</h3>
                         </a>
