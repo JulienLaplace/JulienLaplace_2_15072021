@@ -250,8 +250,8 @@ footer
 {
     display: flex;
     justify-content: space-around;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .background-heb
@@ -266,7 +266,7 @@ footer
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .carte-heb
@@ -365,7 +365,7 @@ footer
 .med-img 
 {
     box-shadow: 5px 5px 15px -5px #aaa;
-    overflow: hidden;
+    overflow: hidden; /* Permet de cacher le debordement */
     height: 350px;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -418,6 +418,8 @@ footer
 {
     background-color: #F2F2F2;
 }
+
+
 
 #container-footer 
 {
